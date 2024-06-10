@@ -28,6 +28,18 @@
     color: #4484c1;
 }
 
+.lock {
+    position: absolute;
+    right: 30px;
+    top: 63%;
+    cursor: pointer;
+    color: #4484c1;
+}
+
+.lockInp {
+    background-color: #b3cfe4 !important;
+}
+
 .signB {
 
 

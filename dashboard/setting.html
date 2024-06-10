@@ -227,8 +227,9 @@
         </div>
         <div class="sidebar-nav" data-simplebar="true">
           
-             <!--navigation-->
-             <ul class="metismenu" id="sidenav">
+           
+            <!--navigation-->
+            <ul class="metismenu" id="sidenav">
               <li>
                 <a href="./dashboard.html" class="">
                  <div class="icnonDiv">
@@ -342,7 +343,7 @@
             
             
              </ul>
-             <ul class="metismenu d-flex flex-column justify-content-center h-50">
+               <ul class="metismenu d-flex flex-column justify-content-center h-50">
             
               <li class="">
                 <a href="./setting.html" class="">
@@ -388,6 +389,7 @@
                 
               </li>
              </ul>
+            
             <!--end navigation-->
         </div>
         
@@ -398,67 +400,121 @@
   <!--start main wrapper-->
   <main class="main-wrapper">
     <div class="main-content">
-   
-		<div class="row">
-     <div class="col-md-6 my-2">
-      <h3 class="fmon">Reports</h3>
-     </div>
-    
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="my-2">
-               <p>Report Filter</p>
-              <div class="row">
-                <div class="col-md-4">
-                    <label class="slabel">Category</label>
-                    <select class="form-select fsele" id="">
-                    <option value=""selected>Merz</option>
-                    <option value="">2</option>
-                    <option value="">4erz</option>
-                    </select>
+        <div class="container-fluid mt-0 pt-2 py-5">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="mt-5 pt-5">
+                  <p class="fs3 mt-5 pt-5">Edit Profile</p>
                 </div>
-                <div class="col-md-4">
-                    <label class="slabel">Product</label>
-                    <select class="form-select fsele" id="">
-                    <option value=""selected>Xeamin</option>
-                    <option value="">2</option>
-                    <option value="">4erz</option>
-                    </select>
+              </div>
+              <div class="col-md-8">
+                <div class="d-flex align-items-center">
+                  <div class="peofileImage position-relative">
+                    <img src="./assets/images/avatars/03.png" alt="" />
+                     <label for="pImage" class="btnAdd btnupImage"><img src="./assets/images/upiIcon.svg" alt="" width="25px"> </label>
+                     <input type="file" name="" id="pImage" class="d-none">
+                   
+                  </div>
+                 <div class="d-block  ms-3">
+                    <p class="proText m-0">Elenor Pina</p>
+                    <p class="proText m-0 fs1">Admin</p>
+                 </div>
                 </div>
-                <div class="col-md-4">
-                    <label class="slabel">Date Range</label>
-                    <select class="form-select fsele" id="">
-                    <option value=""selected>Jan-Mar</option>
-                    <option value="">2</option>
-                    <option value="">4erz</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <label class="slabel">Assigned to</label>
-                    <select class="form-select fsele" id="">
-                    <option value=""selected>Lianeal Messi</option>
-                    <option value="">2</option>
-                    <option value="">4erz</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <label class="slabel">Location </label>
-                    <select class="form-select fsele" id="">
-                    <option value=""selected>NewYork</option>
-                    <option value="">2</option>
-                    <option value="">4erz</option>
-                    </select>
-                </div>
-                <div class="col-md-4 my-1 d-flex justify-content-end align-items-end">
-                    <a href="./reports2.html" class="btn btnAdd">show result</a>
+                <div class="my-3">
+                  <div class="row">
+                    <div class="col-md-6 my-2">
+                      <small class="my-3 text-muted fw-bolder">Personal</small>
+                      <div class="my-2 d-flex justify-content-between">
+                        <div class="mx-1">
+                          <label class="prLabel" for="form-label"
+                            >First Name</label
+                          >
+                          <input class="form-control fsele prInp" type="text" />
+                        </div>
+                        <div class="mx-1">
+                          <label class="prLabel" for="form-label"
+                            >Surname</label
+                          >
+                          <input class="form-control fsele prInp" type="text" />
+                        </div>
+                      </div>
+                      <div class="my-2">
+                        <label class="prLabel" for="form-label">Vat#</label>
+                        <input
+                          class="form-control fsele prInp"
+                          type="text"
+                          placeholder="Enter Value"
+                        />
+                      </div>
+                      <div class="my-2">
+                        <label class="prLabel" for="form-label"
+                          >Date of birth</label
+                        >
+                        <input
+                          class="form-control fsele prInp"
+                          type="text"
+                          placeholder="Enter Value"
+                        />
+                      </div>
+                    
+                    </div>
+                    <div class="col-md-6 my-2">
+                      <small class="my-3 text-muted fw-bolder">Contact</small>
+                      <div class="my-2">
+                        <div class="">
+                          <label class="prLabel" for="form-label">Email</label>
+                          <input
+                            class="form-control fsele prInp"
+                            type="text"
+                            placeholder="admin@gmail.com"
+                          />
+                        </div>
+                      </div>
+                      <div class="my-2">
+                        <label for="exampleInput">Phone Number</label>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <select class="form-select fsele" id="exampleSelect">
+                              <option value="">+98</option>
+                              <option value="option1">Option 1</option>
+                              <option value="option2">Option 2</option>
+                              <option value="option3">Option 3</option>
+                            </select>
+                          </div>
+                          <div class="col-md-8">
+                            <input
+                              class="form-control fsele prInp"
+                              type="text"
+                              placeholder="912000000"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-2">
+                        <label class="prLabel" for="form-label">Country</label>
+                        <input
+                          class="form-control fsele prInp"
+                          type="text"
+                          placeholder="Enter Value"
+                        />
+                      </div>
+                      <div class="my-2">
+                        <label class="prLabel" for="form-label">City</label>
+                        <input
+                          class="form-control fsele prInp"
+                          type="text"
+                          placeholder="Enter Value"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <button class="btnAdd btn px-5">Save</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            
-        </div>
-    </div>
-      </div>
+          </div>
 
     
   </main>

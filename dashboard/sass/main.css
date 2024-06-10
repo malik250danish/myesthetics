@@ -9,6 +9,7 @@ body {
 
   letter-spacing: 0.5px;
   background-color: #FFF;
+  text-transform: capitalize;
 }
 
 a {
@@ -66,7 +67,8 @@ input::placeholder {
 
 
   background: #ffffff;
-  width: fit-content;
+  /* width: fit-content; */
+  width: 100%;
 
 }
 
@@ -88,7 +90,7 @@ input::placeholder {
   top: 54px;
   left: 0;
   right: 0;
-  background-color: #F8EEEE;
+  /* background-color: #F8EEEE; */
 
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   animation: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 animdropdown;
@@ -99,7 +101,7 @@ input::placeholder {
   box-shadow: none;
   margin-bottom: 0;
   border-radius: 0px;
-  background-color: #F8EEEE !important;
+  /* background-color: #F8EEEE !important; */
 }
 
 .top-header .navbar .search-bar .search-popup .search-content {
@@ -323,7 +325,7 @@ input::placeholder {
 
 .top-header .navbar .dropdown-menu {
   border-radius: 15px !important;
-  background-color: #F8EEEE !important;
+  background-color: #FFF !important;
   border: 0;
   animation: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 animdropdown;
 }
@@ -332,7 +334,7 @@ input::placeholder {
   content: "";
   width: 13px;
   height: 13px;
-  background: #F8EEEE;
+  background: #FFF;
   position: absolute;
   top: -6px;
   right: 16px;
@@ -442,7 +444,7 @@ input::placeholder {
 }
 
 .sidebar-wrapper .sidebar-nav {
-  margin-top: 70px;
+  margin-top: 85px;
   height: 100%;
   background: transparent;
   ;
@@ -460,6 +462,7 @@ input::placeholder {
   background: 0 0;
   display: flex;
   flex-direction: column;
+  margin-top: 2.5rem
 }
 
 .sidebar-wrapper .sidebar-nav .metismenu li+li {
@@ -1555,7 +1558,7 @@ form select.error:focus {
   border-width: 1px !important;
   border-style: solid !important;
 
-
+  cursor: pointer;
   background: #ffffff
 }
 
@@ -1597,10 +1600,17 @@ form select.error:focus {
 
 }
 
+
 .btnAdd:hover {
   border: 1px solid #000;
 
   background: #03c9d7
+}
+
+.btnupImage {
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
 }
 
 .useImage {
@@ -1750,6 +1760,10 @@ div.dt-container .dt-paging .dt-paging-button {
 
 .logo-icon img {
   transition: 0.2s all;
+  height: 95px;
+  margin-top: 0.9rem;
+
+  object-fit: contain;
 }
 
 .imageWidth img {
@@ -1880,4 +1894,139 @@ tr {
   cursor: pointer;
   width: fit-content;
   background: #f2f2f2
+}
+
+/* chat page csss */
+.chat-box {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden
+}
+
+.chats {
+  padding: 30px 15px
+}
+
+.chat-avatar {
+  float: right
+}
+
+.chat-avatar .avatar {
+  width: 30px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.chat-body {
+  display: block;
+  margin: 10px 30px 0 0;
+  overflow: hidden
+}
+
+.chat-body:first-child {
+  margin-top: 0
+}
+
+.chat-content {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 8px 15px;
+  margin: 0 20px 10px 0;
+  clear: both;
+  color: #fff;
+  background-color: #62a8ea;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.chat-content:before {
+  position: absolute;
+  top: 10px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  content: '';
+  border: 5px solid transparent;
+  border-left-color: #62a8ea
+}
+
+.chat-content>p:last-child {
+  margin-bottom: 0
+}
+
+.chat-content+.chat-content:before {
+  border-color: transparent
+}
+
+.chat-time {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, .6)
+}
+
+.chat-left .chat-avatar {
+  float: left
+}
+
+.chat-left .chat-body {
+  margin-right: 0;
+  margin-left: 30px
+}
+
+.chat-left .chat-content {
+  float: left;
+  margin: 0 0 10px 20px;
+  color: #76838f;
+  background-color: #dfe9ef
+}
+
+.chat-left .chat-content:before {
+  right: auto;
+  left: -10px;
+  border-right-color: #dfe9ef;
+  border-left-color: transparent
+}
+
+.chat-left .chat-content+.chat-content:before {
+  border-color: transparent
+}
+
+.chat-left .chat-time {
+  color: #a3afb7
+}
+
+.panel-footer {
+  padding: 0 30px 15px;
+  background-color: transparent;
+  border-top: 1px solid transparent;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.avatar img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 0 none;
+  border-radius: 1000px;
+}
+
+.chat-avatar .avatar {
+  width: 30px;
+}
+
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  white-space: nowrap;
+  border-radius: 1000px;
+  vertical-align: bottom;
+}
+
+.fontLgo {
+  font-size: 8px;
 }
