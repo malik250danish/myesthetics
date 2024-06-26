@@ -8,16 +8,35 @@
 
 }
 
+body {
+    height: 100%;
+}
+
 .bg-main {
 
     background: #000
 }
 
 .formInp {
-    background: #e7e8eb;
-    border: 1px solid #fff;
-    border-radius: 15px;
+    background: transparent;
+    border: 1px solid #03c9d7;
+    border-radius: 8px;
+    color: #000;
 
+}
+
+.formInp::placeholder {
+    color: #000;
+    /* Change the color to red */
+    opacity: 1;
+    /* Ensure full opacity */
+}
+
+.formInp:focus::placeholder {
+    color: #000;
+    /* Change the color to red */
+    opacity: 1;
+    /* Ensure full opacity */
 }
 
 .eye {
@@ -25,7 +44,7 @@
     right: 30px;
     top: 63%;
     cursor: pointer;
-    color: #4484c1;
+    color: #000;
 }
 
 .lock {
@@ -47,8 +66,8 @@
     background: #03c9d7;
     color: #fff;
     width: fit-content;
-    padding-inline: 5rem;
-    border-radius: 25px;
+    /*padding-inline: 5rem;*/
+    border-radius: 8px;
     border: 2px solid transparent;
     transition: 0.3s all;
     width: 100%;
@@ -102,7 +121,7 @@
 }
 
 .forgText {
-    color: #fff;
+    color: #000;
     ;
     font-size: 15px;
     font-weight: 500;
@@ -140,10 +159,191 @@
 
 .fs3 {
     font-family: "Poppins";
-    font-size: 21px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 22px;
     font-style: normal;
     text-align: left;
-    color: #ffffff !important;
+    color: #000 !important;
+}
+
+.bgLeft {
+    background: url("../images/BG.png") #03c9d7;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.logoImg {
+    width: 250px;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.h-100vh {
+    /* height: calc(100vh - 25px); */
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.brandBtn {
+    border-radius: 8px;
+    width: 130px;
+    object-fit: cover;
+
+}
+
+.footer {
+    text-decoration: none;
+
+}
+
+
+.footer li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+
+
+}
+
+.footer li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer li:not(:first-child) {
+    border-left: 1.5px solid #000;
+    padding-left: 0.8rem;
+}
+
+.border8 {
+    border-radius: 8px;
+}
+.h100p{
+    height:100% !important;
+}
+.bgCard {
+    background-color: #fff;
+    /* border: 1px solid #03c9d7; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /*position: absolute;*/
+    /*top: 10%;*/
+    height: 450px;
+    width:500px;
+}
+.conSign
+{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.bgCardSign {
+    background-color: #fff;
+    /* border: 1px solid #03c9d7; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /*position: absolute;*/
+    /*top: 10%;*/
+    /*height: 380px*/
+    
+    /*position: absolute;*/
+    /* top: 50%; */
+    /*left: 50%;*/
+    /*right: 50%;*/
+    /*width: 500px;*/
+    /* transition: tran; */
+    height: 400px;
+    /*transform: translate(-50%, -50%);*/
+}
+
+
+.imgwav {
+    position: absolute;
+    width: 600px;
+    top: -248px;
+    left: -88px;
+    z-index: -1;
+}
+
+/* .wav2 {
+    width: 400px;
+    position: relative;
+    bottom: -124px;
+    left: 260px;
+    z-index: -1;
+} */
+
+.wavBox2 {
+    /* width: 300px;
+    height: 300px; */
+    /* background: url('../images/wav2.png'); */
+    background-size: cover;
+    background-position: center;
+}
+
+.imgwav2 {
+    width: 550px;
+
+}
+
+.mainWaveBox {
+    position: absolute;
+    right: -40px;
+    bottom: -150px;
+
+}
+
+.mainWaveBox2 {
+    position: absolute;
+    right: -40px;
+    bottom: -100px;
+
+}
+
+.z9 {
+    z-index: 9;
+}
+
+.foot {
+    position: absolute;
+    bottom: 64%;
+    left: 40%;
+    color: #fff;
+}
+
+.foot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mb13 {
+    margin-bottom: 13rem;
+}
+
+
+@media(max-width:768px) {
+
+    .h-100vh {
+        height: 100%;
+    }
+    .bgCardSign {
+   
+    
+    position: static;
+    /* top: 50%; */
+    left: 50%;
+    right: 50%;
+    width: 100%;
+    /* transition: tran; */
+    height: auto;
+    transform: none
+}
 }

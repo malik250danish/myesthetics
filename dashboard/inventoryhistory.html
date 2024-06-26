@@ -34,7 +34,7 @@
   <!--start header-->
   <header class="top-header">
     <nav class="navbar navbar-expand align-items-center gap-4">
-      <div class="btn-toggle">
+      <div  class="btn-toggle d-block d-md-none">
         <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
       </div>
       <div class="search-bar flex-grow-1">
@@ -214,7 +214,7 @@
   <!--start sidebar-->
     <aside class="sidebar-wrapper">
         <div class="sidebar-header">
-          <div class="logo-icon m-auto">
+            <div class="logo-icon m-auto">
            <div>
                         <img src="assets/images/dplogo.png" class="" width="150px" alt="">
             <p class="text-white text-center fontLgo m-0">Inventory Management Solutions</p>
@@ -228,7 +228,7 @@
         <div class="sidebar-nav" data-simplebar="true">
           
             <!--navigation-->
-             <ul class="metismenu" id="sidenav">
+  <ul class="metismenu" id="sidenav">
               <li>
                 <a href="./dashboard.html" class="">
                  <div class="icnonDiv">
@@ -259,7 +259,7 @@
                 </a>
                 
               </li>
-              <li>
+               <li>
                <a href="./location.html" class="">
                   <div class="icnonDiv">
                     
@@ -272,7 +272,7 @@
                 
               </li>
              <li>
-                <a href="#" class="">
+                <a href="./vendors.html" class="">
                   <div class="icnonDiv">
                     
                       <span class="img2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
@@ -294,7 +294,7 @@
                 
               </li>
             
-              <li>
+            <li>
                 <a href="./inventoryhistory.html" class="">
                   <div class="icnonDiv">
                  
@@ -339,7 +339,6 @@
                 </a>
                 
               </li>
-      
               <li>
                 <a href="#" class="">
                    <div class="icnonDiv">
@@ -354,7 +353,7 @@
             
             
              </ul>
-             <ul class="metismenu d-flex flex-column justify-content-center h-50">
+               <ul class="metismenu d-flex flex-column justify-content-center m-0">
             
               <li class="">
                 <a href="./setting.html" class="">
@@ -400,25 +399,19 @@
     <div class="main-content">
    
 		<div class="row">
-     <div class="col-md-8 my-2">
-      <h3 class="fmon">Dashboard</h3>
+     <div class="col-md-6 my-2">
+      <h3 class="fmon">Inventory History</h3>
      </div>
-      <div class="col-md-4 my-2">
+      <div class="col-md-6 my-2">
         <div class="row">
+           
           <div class="col-md-6 my-1">
-            <select class="form-select date-selection" name="date-selection" id="date-selection-1">
-              <option value="Today" selected>Today</option>
-              <option value="Yesterday">Yesterday</option>
-              <option value="This Week">This Week</option>
-              <option value="Last Week">Last Week</option>
-              <option value="This Month">This Month</option>
-              <option value="Last Month">Last Month</option>
-              <option value="Custom">Custom</option>
+            <select name="" id="" class="form-select fsele">
+              <option value="" selected>Today</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">2</option>
             </select>
-           <div class="d-flex d-none date"  id="">
-            <input class="form-control " type="date" class="">
-          <button class="btn btnRefresh" id="">   <img src="./assets/images/reload.svg" alt="" width="15px"></button>
-           </div>
            </div>
            <div class="col-md-6 my-1">
             <select name="" id="" class="form-select fsele ">
@@ -429,333 +422,166 @@
             </select>
            </div>
         </div>
+      
    
       </div>
     </div>
-      
-<div class="row my-2">
-  <div class="col-md-9">
     <div class="row">
-      <div class="my-2 col-md-4">
-        <div class=" mCard p-2">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex justify-content-between align-items-center">
-                <img src="./assets/images/users.png" alt="">
-                <p class="m-0 ms-2 fs1">Reports</p>
-              </div>
-              <div>
-               <img src="./assets/images/ellep.png" alt="">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 my-1">
-                  <p class="fs2">Financial & Inventory</p>
-                <div class="mt-2">
-                  <div class="blBox d-flex justify-content-evenly align-items-center p-2">
-                    <img src="./assets/images/ar.png" alt="">
-                    <p class="fs4 m-0">2.1%</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 my-1 d-flex justify-content-end align-items-center">
-                            <img class="img-fluid" src="./assets/images/ch.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="my-2 col-md-4">
-        <div class=" mCard p-2">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex justify-content-between align-items-center">
-                <img src="./assets/images/patient.png" alt="">
-                <p class="m-0 ms-2 fs1"> Treatments Administered</p>
-              </div>
-              <div>
-               <img src="./assets/images/ellep.png" alt="">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 my-1">
-                <p class="fs2">New & Old Patients</p>
-                <div class="mt-2">
-                  <div class="blBox2 d-flex justify-content-evenly align-items-center p-2">
-                    <img src="./assets/images/ar2.png" alt="">
-                    <p class="fs5 m-0">89.5%</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 my-1 d-flex justify-content-end align-items-center">
-                            <img class="img-fluid" src="./assets/images/ch2.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="my-2 col-md-4">
-        <div class=" mCard p-2">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex justify-content-between align-items-center">
-                <img src="./assets/images/stock.png" alt="">
-                <p class="m-0 ms-2 fs1">Stock Items</p>
-              </div>
-              <div>
-               <img src="./assets/images/ellep.png" alt="">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 my-1">
-                <p class="fs2 text-wrap">Sync your stock items</p>
-                <div class="mt-2">
-                  <div class="blBox3 d-flex justify-content-evenly align-items-center p-2">
-                    <img src="./assets/images/ar3.png" alt="">
-                    <p class="fs6 m-0">172.1%</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 my-1">
-                <div class="d-flex justify-content-between">
-                  <div class="d-flex align-items-center ">
-                    <img src="./assets/images/bdot.png" alt="">
-                    <p class="mb-0 fs7 ms-1">75.9% </p>
-                  </div>
-                  <div class="d-flex align-items-center ">
-                    <img src="./assets/images/rdot.png" alt="">
-                    <p class="mb-0 fs7 ms-1">89.9% </p>
-                  </div>
-                </div>
-                <div class=" mt-1 mb-0 d-flex justify-content-end align-items-center"  style="height: 70%;">
-                  <img class="img-fluid" src="./assets/images/ch3.png" alt="">
-                </div>
-                           
-              </div>
+        <div class="col-md-12">
+          <p>Report Filter:</p>
+        <div class="my-2 d-flex justify-content-between gap-2 flex-wrap" >
             
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="mCard p-2">
-      <div class="row">
-        <div class="col-md-4 my-2">
-              <div class="row ps-2">
-                <div class="col-md-12 my-2">
-                  <div class=" mCard p-2">
-                    <div class="card-body">
-                      <div class="">
-                        <div class="d-flex align-items-center">
-                          <img src="./assets/images/a1.png" alt="">
-                          <p class="m-0 ms-2 fs8">Inventory checked out Today</p>
-                           
-                        </div>
-                        <div class="my-2 d-flex justify-content-between align-items-center flex-wrap">
-                          <p class="fs9 m-0">$30,000</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <img class="mx-1" src="./assets/images/aru.png" alt="">
-                            <p class="mb-0 ff1">2.99%</p>
-                          </div>
-                        </div>
-                       
-                      </div>
-                     
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 my-2">
-                  <div class=" mCard p-2">
-                    <div class="card-body">
-                      <div class="">
-                        <div class="d-flex align-items-center">
-                          <img src="./assets/images/a2.png" alt="">
-                          <p class="m-0 ms-2 fs8">Average Price of
-                            inventory items</p>
-                           
-                        </div>
-                        <div class="my-2 d-flex justify-content-between align-items-center flex-wrap">
-                          <p class="fs9 m-0">$10,000</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <img class="mx-1" src="./assets/images/aru2.png" alt="">
-                            <p class="mb-0 ff2">2.99%</p>
-                          </div>
-                        </div>
-                       
-                      </div>
-                     
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 my-2">
-                  <div class=" mCard p-2">
-                    <div class="card-body">
-                      <div class="">
-                        <div class="d-flex align-items-center">
-                          <img src="./assets/images/a3.png" alt="">
-                          <p class="m-0 ms-2 fs8">Inventory expiring (30 days)</p>
-                           
-                        </div>
-                        <div class="my-2 d-flex justify-content-between align-items-center flex-wrap">
-                          <p class="fs9 m-0">$10,000</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <img class="mx-1" src="./assets/images/arb.png" alt="">
-                            <p class="mb-0 ff2">2.99%</p>
-                          </div>
-                        </div>
-                       
-                      </div>
-                     
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 my-2">
-                  <div class=" mCard p-2">
-                    <div class="card-body">
-                      <div class="">
-                        <div class="d-flex align-items-center">
-                          <img src="./assets/images/a4.png" alt="">
-                          <p class="m-0 ms-2 fs8">Low Stock Items</p>
-                           
-                        </div>
-                        <div class="my-2 d-flex justify-content-between align-items-center flex-wrap">
-                          <p class="fs9 m-0">500</p>
-                          <div class="d-flex justify-content-between align-items-center">
-                            <img class="mx-1" src="./assets/images/arb2.png" alt="">
-                            <p class="mb-0 ff3">2.99%</p>
-                          </div>
-                        </div>
-                       
-                      </div>
-                     
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div class="col-md-8 my-2">
-          <div class="row pe-4">
-            <div class="col-md-9 my-2">
-              <p class="ff4 m-0">Total Inventory</p>
-              <p class="ff5 m-0">$225,000</p>
-            </div>
-            <div class="col-md-3 my-2">
-             
-
-
-
-
-              <select class="form-select date-selection" name="date-selection" id="date-selection-1">
-                <option value="Today" selected>Today</option>
-                <option value="Yesterday">Yesterday</option>
-                <option value="This Week">This Week</option>
-                <option value="Last Week">Last Week</option>
-                <option value="This Month">This Month</option>
-                <option value="Last Month">Last Month</option>
-                <option value="Custom">Custom</option>
+            <div class="filtr">
+          
+              <label for="">Brand</label>
+              <select name="" id="" class="form-select fsele">
+                <option value="" selected>Merz</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">2</option>
               </select>
-             <div class="d-flex d-none date"  id="">
-              <input class="form-control " type="date" class="">
-            <button class="btn btnRefresh" id="">   <img src="./assets/images/reload.svg" alt="" width="15px"></button>
-             </div>
-            
+            </div>
+            <div class="filtr">
+          
+              <label for="">Product Type</label>
+              <select name="" id="" class="form-select fsele">
+                <option value="" selected>Xeoimin 100 units</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">2</option>
+              </select>
+            </div>
+            <div class="filtr">
+          
+              <label for="">Date Range</label>
+              <select name="" id="" class="form-select fsele">
+                <option value="" selected>Jan - Mar</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">2</option>
+              </select>
+            </div>
+            <div class="filtr">
+          
+              <label for="">Assigned To</label>
+              <select name="" id="" class="form-select fsele">
+                <option value="" selected>John Doe</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">2</option>
+              </select>
+            </div>
+            <div class="filtr">
+          
+              <label for="">Location</label>
+              <select name="" id="" class="form-select fsele">
+                <option value="" selected>Newyork</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">2</option>
+              </select>
             </div>
           </div>
-          <div>
-            <div id="chart"></div>
-          </div>
+            <div class="mCard  ">
+           
+               
+                   
+                       <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                           
+                            <tr>
+                              <th>Brand</th>
+                              <th>Category</th>
+                              <th>Assigned to</th>
+                              <th>Date</th>
+                              <th>Location</th>
+                              <th>Units</th>
+                              <th>Units Left</th>
+                              <th>Price</th>
+                              <th>QR Code</th>
+                              <th>Actions</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <!-- Sample data -->
+                            <tr>
+                              <td>Merz </td>
+                              <td class="">
+                              
+                                Xeomin 100 units
+                              </td>
+                              <td>Lionel Messi</td>
+                              <td>23 Mar 2024</td>
+                              <td>New york</td>
+                              <td>300 Units</td>
+                              <td class="leftUnits">230 Units</td>
+                              <td>$50,000</td>
+                            <td><img src="./assets/images/qrp.png" alt=""></td>
+                             
+                             
+                              <td>
+                               <div class="elep p-2 ">
+                                <img src="./assets/images/ellep.png" alt="">
+                               </div>
+                              </td>
+                            </tr>
+                       
+                            <tr>
+                              <td>Merz </td>
+                              <td class="">
+                              
+                                Xeomin 100 units
+                              </td>
+                              <td>Lionel Messi</td>
+                              <td>23 Mar 2024</td>
+                              <td>New york</td>
+                              <td>300 Units</td>
+                              <td class="leftUnits">230 Units</td>
+                              <td>$50,000</td>
+                            <td><img src="./assets/images/qrp.png" alt=""></td>
+                             
+                             
+                              <td>
+                               <div class="elep p-2 ">
+                                <img src="./assets/images/ellep.png" alt="">
+                               </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Merz </td>
+                              <td class="">
+                              
+                                Xeomin 100 units
+                              </td>
+                              <td>Lionel Messi</td>
+                              <td>23 Mar 2024</td>
+                              <td>New york</td>
+                              <td>300 Units</td>
+                              <td class="leftUnits">230 Units</td>
+                              <td>$50,000</td>
+                            <td><img src="./assets/images/qrp.png" alt=""></td>
+                             
+                             
+                              <td>
+                               <div class="elep p-2 ">
+                                <img src="./assets/images/ellep.png" alt="">
+                               </div>
+                              </td>
+                            </tr>
+                       
+                            <!-- More rows here -->
+                          </tbody>
+                        </table>
+                       </div>
+                 
+                 
+                 
+            </div>
         </div>
+    </div>
       </div>
 
-    </div>
-  </div>
-  <div class="col-md-3 py-2">
-   <div class="mCard p-2">
-    <div class="d-flex justify-content-between align-items-center flex-wrap">
-      <p class="ff4 m-0">Inventory History</p>
-      <div>
-        <img src="./assets/images/ellep.png" alt="">
-      </div>
-
-    </div>
-   <p class="ff5">Total Stock 20,000  </p>
-    <div class="row  borderB ">
-      <div class="col-md-6 my-2">
-        <div class="d-flex gap-2 align-items-center">
-          <img src="./assets/images/da.png" alt="">
-          <p class="m-0 fs2">Add Unit</p>
-         
-        </div>
-        <p class="ff6">Items 21,456</p>
-      </div>
-      <div class="col-md-6 my-2">
-        <div class="d-flex gap-2 align-items-center">
-          <img src="./assets/images/ua.png" alt="">
-          <p class="m-0 fs2">Assinged</p>
-        </div>
-        <p class="ff6">Items 10,356</p>
-      </div>
-    </div>
-    <div>
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="ff7 m-0">Popular</p>
-        <p class="fs2 m-0">3 Items</p>
-      </div>
-      <div class="my-2">
-        <div id="chartpie"></div>
-        <div class="my-2 ">
-          <div class="d-flex justify-content-between align-items-center flex-wrap my-2">
-            <div class="d-flex gap-1 align-items-center">
-              <div class="mBox">
-                <img src="./assets/images/m1.png" alt="">
-              </div>
-              <p class="m-0 ff8">Xeomin</p>
-            </div>
-          
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <img class="mx-1" src="./assets/images/ru.png" alt="">
-                <p class="mb-0 ff2">2.99%</p>
-              </div>
-           
-          </div>
-          <div class="d-flex justify-content-between align-items-center flex-wrap my-2">
-            <div class="d-flex gap-1 align-items-center">
-              <div class="mBox">
-                <img src="./assets/images/m1.png" alt="">
-              </div>
-              <p class="m-0 ff8">Xeomin</p>
-            </div>
-          
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <img class="mx-1" src="./assets/images/yu.png" alt="">
-                <p class="mb-0 fff2">2.99%</p>
-              </div>
-           
-          </div>
-          <div class="d-flex justify-content-between align-items-center flex-wrap my-2">
-            <div class="d-flex gap-1 align-items-center">
-              <div class="mBox">
-                <img src="./assets/images/m1.png" alt="">
-              </div>
-              <p class="m-0 ff8">Xeomin</p>
-            </div>
-          
-              
-              <div class="d-flex justify-content-between align-items-center">
-                <img class="mx-1" src="./assets/images/bu.png" alt="">
-                <p class="mb-0 fff3">2.99%</p>
-              </div>
-           
-          </div>
-        </div>
-
-      </div>
-    </div>
-   </div>
-  </div>
-</div>
     
   </main>
   <!--end main wrapper-->
@@ -784,152 +610,7 @@
  
   <script src="assets/js/index2.js"></script>
   <script src="assets/js/main.js"></script>
-  <!-- appax chart -->
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
-  <script>
-    var options = {
-      series: [{
-        name: 'Neurotoxins ',
-        type: 'line',
-        data: [50000, 75000, 100000, 125000, 150000, 175000, 200000], // Example data
-        color: '#FF5C45'
-      }, {
-        name: ' Dermal Fillers',
-        type: 'line',
-        data: [20000, 60000, 85000, 110000, 135000, 160000, 185000], // Example data
-        color: '#FDB74E'
-      },
-    
-       {
-        name: 'Total Inventory',
-        type: 'area',
-        data: [0, 25000, 50000, 75000, 100000, 125000, 150000], // Example data
-        color: '#5096FF'
-      },
-      {
-        name: 'Others',
-        type: 'area',
-        data: [0, 55000, 20000, 75000, 1000, 125000, 550000], // Example data
-        color: '#693C6B'
-      },
-      ],
-      chart: {
-        height: 350,
-       
-        type: 'line',
-        stacked: false,
-        toolbar: {
-          show: false
-        }
-      },
-      dataLabels: {
-        enabled: false
-      },
-      stroke: {
-        width: [3, 3, 0],
-        curve: 'smooth'
-      },
-      xaxis: {
-        categories: [  'aaaMonday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-        labels: {
-        style: {
-            paddingLeft: '20px', // Adjust the padding as needed
-        }
-    }
-      },
-      yaxis: {
-        show: false,
-        labels: {
-          formatter: function (val) {
-            return "$" + val;
-          }
-        }
-      },
-      tooltip: {
-        x: {
-          formatter: function (val) {
-            return val;
-          }
-        },
-        y: {
-          formatter: function (val) {
-            return "$" + val;
-          }
-        }
-      }
-    };
-
-    var chart = new ApexCharts(document.querySelector("#chart"), options);
-    chart.render();
-
-    // pie chart
-    var optionsp = {
-      series: [50000, 75000, 20000], // Example data
- 
-      colors: ['#FF5C45', '#FDB74E', '#5096FF'],
-      chart: {
-        width: 240,
-        type: 'donut',
-        radius: ['40%', '70%']
-      },
-      legend: {
-        show: false
-      },
-      dataLabels: {
-    enabled: false // Hide data labels
-  },
-      responsive: [{
-        breakpoint: 480,
-        options: {
-          chart: {
-            width: 200
-          },
-          
-        }
-      }]
-    };
-
-    var chartpie = new ApexCharts(document.querySelector("#chartpie"), optionsp);
-    chartpie.render();
-  </script>
-  <script>
   
-   
-  let dateselects = document.getElementsByClassName("date-selection"); // Get all elements with class "date-selection"
-let dates = document.getElementsByClassName('date'); // Get all elements with class "date"
-let btnRefreshes = document.getElementsByClassName('btnRefresh'); // Get all elements with class "btnRefresh"
-
-// Loop through all elements with class "date-selection"
-for (let dateselect of dateselects) {
-  console.log("dateselect",dateselect)
-    dateselect.addEventListener('change', () => {
-        if (dateselect.value === "Custom") {
-            console.log('click');
-            dateselect.classList.add('d-none');
-            for (let date of dates) {
-                date.classList.remove('d-none');
-            }
-        }
-    });
-}
-
-// Loop through all elements with class "btnRefresh"
-for (let btnRefresh of btnRefreshes) {
-    btnRefresh.addEventListener('click', () => {
-        for (let dateselect of dateselects) {
-       
-            dateselect.classList.remove('d-none');
-            dateselect.value = "Today";
-        }
-        for (let date of dates) {
-            date.classList.add('d-none');
-        }
-    });
-}
-
- 
-</script>
 </body>
 
 

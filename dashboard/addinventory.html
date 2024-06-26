@@ -34,7 +34,7 @@
   <!--start header-->
   <header class="top-header">
     <nav class="navbar navbar-expand align-items-center gap-4">
-      <div class="btn-toggle">
+      <div  class="btn-toggle d-block d-md-none">
         <a href="javascript:;"><i class="material-icons-outlined">menu</i></a>
       </div>
       <div class="search-bar flex-grow-1">
@@ -272,7 +272,7 @@
                 
               </li>
              <li>
-                <a href="#" class="">
+                <a href="./vendors.html" class="">
                   <div class="icnonDiv">
                     
                       <span class="img2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
@@ -353,7 +353,7 @@
             
             
              </ul>
-               <ul class="metismenu d-flex flex-column justify-content-center h-50">
+               <ul class="metismenu d-flex flex-column justify-content-center m-0">
             
               <li class="">
                 <a href="./setting.html" class="">
@@ -402,7 +402,7 @@
         <div class="row my-2">
           <div class="col-md-6 my-2">
             <label class="slabel">Category</label>
-            <select class="form-select fsele" id="">
+            <select class="form-select fsele" id="" required>
               <option value="Allergan">Neurotoxins </option>
               <option value="Merz"> Dermal Fillers</option>
               <option value="Revance">Others</option>
@@ -412,7 +412,7 @@
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Brand</label>
-            <select class="form-select fsele" id="">
+            <select class="form-select fsele" id="" required>
               <option value="Allergan">Allergan</option>
               <option value="Merz">Merz</option>
               <option value="Revance">Revance</option>
@@ -423,7 +423,7 @@
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Product Type</label>
-            <select class="form-select fsele" id="">
+            <select class="form-select fsele" id="" required>
               <option>Kybella 4 vials 2ml per vial</option>
               <option>JUVÉDERM® VOLUMA® XC (2 syringe box) 1.0ml each</option>
               <option>JUVÉDERM® VOLUX® XC (2 syringe box) 1.0ml each</option>
@@ -463,7 +463,7 @@
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Units/Bottles</label>
-            <select class="form-select fsele" id="">
+            <select class="form-select fsele" id="" required>
               <option value=""selected>Xeamin</option>
               <option value="">2</option>
               <option value="">4erz</option>
@@ -471,7 +471,7 @@
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">vile/syringe</label>
-            <select class="form-select fsele" id="">
+            <select class="form-select fsele" id="" required>
               <option value=""selected>Select</option>
               <option value="">vile</option>
               <option value="">syringe</option>
@@ -479,19 +479,19 @@
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Quantity</label>
-           <input type="text" class="form-control fsele" name="" id="" placeholder="Write Here">
+           <input type="text" class="form-control fsele" name="" id="" placeholder="Write Here" required>
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Cost</label>
-           <input type="text" class="form-control fsele" name="" id="" placeholder="Write Here" value="1000" disabled>
+           <input type="text" class="form-control fsele" name="" id="" placeholder="Write Here" required value="1000" disabled>
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Today Date</label>
-           <input type="text" class="form-control fsele" name="" id="" placeholder="Write Here">
+           <input type="text" class="form-control fsele" name="" id="" placeholder="Write Here" required>
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Location</label>
-            <select class="form-select fsele" id="">
+            <select class="form-select fsele" id="" required>
               <option value=""selected>Select</option>
               <option value="">New York</option>
               <option value="">London</option>
@@ -499,12 +499,12 @@
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Date of expiry</label>
-           <input type="text" class="form-control fsele" name="" id="" placeholder="MM/DD/YYYY">
+           <input type="text" class="form-control fsele" name="" id="" placeholder="MM/DD/YYYY" required>
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Lot Number
               </label>
-           <input type="text" class="form-control fsele" name="" id="" placeholder="Lot Number">
+           <input type="text" class="form-control fsele" name="" id="" placeholder="Lot Number" required>
           </div>
           <div class="col-md-6 my-2">
             <label class="slabel">Generate QR</label>
